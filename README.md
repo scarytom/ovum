@@ -13,7 +13,7 @@ __Linux__
 To seed a `java` project in the `foo/` directory you can do this:
 
 ```
-wget https://raw.github.com/scarytom/ovum/master/ovum.sh; chmod +x ovum.sh; ./ovum.sh java foo; rm ovum.sh
+wget -O /tmp/ovum.sh https://raw.github.com/scarytom/ovum/master/ovum.sh; chmod +x /tmp/ovum.sh; /tmp/ovum.sh java foo
 ```
 
 __Windows__
