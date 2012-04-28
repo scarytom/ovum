@@ -22,7 +22,7 @@ To seed a `java` project in the `foo\` directory you can do this:
 ```
 powershell (new-object System.Net.WebClient).DownloadFile('https://raw.github.com/scarytom/ovum/master/ovum.ps1','%TEMP%\ovum.ps1'); .{%TEMP%\ovum.ps1 java foo}
 ```
-N.B. The first time you use Ovum you may need allow script execution with this:
+N.B. The first time you use Ovum on Windows you may need allow script execution with this:
 ```
 powershell Start-Process "$pshome\powershell.exe" -Verb Runas -ArgumentList '-command "set-executionpolicy remotesigned"'
 ```
