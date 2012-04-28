@@ -10,8 +10,12 @@ Ovum populates your empty directory with a basic project structure, testing libs
 Example Usage
 -------------
 
-To seed a `java` project in the `foo/` directory you can do this:
+To seed a `java` project in the `foo` directory you can do this:
 
 ```
 wget https://raw.github.com/scarytom/ovum/master/ovum.sh; chmod +x ovum.sh; ./ovum.sh java foo; rm ovum.sh
+```
+or, on Windows, this:
+```
+powershell (new-object System.Net.WebClient).DownloadFile('https://raw.github.com/scarytom/ovum/master/ovum.ps1','%TEMP%\ovum.ps1'); .{%TEMP%\ovum.ps1}
 ```
