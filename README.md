@@ -12,17 +12,17 @@ __Linux__
 
 To seed a `java` project in the `foo/` directory you can do this:
 
-```
+```bash
 wget -O /tmp/ovum.sh https://raw.github.com/scarytom/ovum/master/ovum.sh; chmod +x /tmp/ovum.sh; /tmp/ovum.sh java foo
 ```
 
 __Windows__
 
 To seed a `java` project in the `foo\` directory you can do this:
-```
+```powershell
 powershell (new-object System.Net.WebClient).DownloadFile('https://raw.github.com/scarytom/ovum/master/ovum.ps1','%TEMP%\ovum.ps1'); .{%TEMP%\ovum.ps1 java foo}
 ```
 N.B. The first time you use Ovum on Windows you may need allow script execution with this:
-```
+```powershell
 powershell Start-Process "$pshome\powershell.exe" -Verb Runas -ArgumentList '-command "set-executionpolicy remotesigned"'
 ```
