@@ -16,7 +16,7 @@ if (!(Test-Path "$womb")) {
 }
 
 Write-Host "downloading seed..."
-(new-object System.Net.WebClient).DownloadFile("https://nodeload.github.com/scarytom/ovum/zipball/$parent","$ovary\data.zip")
+(new-object System.Net.WebClient).DownloadFile("https://github.com/scarytom/ovum/archive/$parent.zip","$ovary\data.zip")
 
 Write-Host "germinating seed..."
 $shell_app=new-object -com shell.application
